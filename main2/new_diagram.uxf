@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>231</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>CLASS: USER
+@Entity
+--
+-String id;
+-Photo photo;
+-String name;
+-String surname;
+-String userName;
+-String password;
+-Integer age;   
+-String street;
+-Integer streetNumber;
+-Zone zone;
+-Integer phoneNumber;
+-Integer alternativeNumber;
+-String email;
+-Date createUser;
+-Date modifiedUser;
+-Boolean active;
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>374</x>
+      <y>297</y>
+      <w>231</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>CLASS: PET
+@Entity
+--
+-String id;
+-Photo photo;
+-String name;
+-Integer ageInMonths;
+-String species;
+-String breed;
+-Integer weight;
+-Sex sex;
+-Size size;
+-Boolean upToDateVaccine;
+-Boolean castrated;
+-Boolean dewormed;
+-String disease;
+-Zone zone;
+-Pet pet;
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>11</y>
+      <w>231</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>CLASS: ZONE
+@Entity
+--
+-String id
+-String neighborhood;
+-String city;
+-String province;
+-String country;
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>22</x>
+      <y>440</y>
+      <w>231</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>CLASS:PHOTO
+@Entity
+--
+-String id;
+-String name;
+-String mime;
+@Lob @Basic (Fetch = FetchType.LAZY)
+-private byte[] picture;
+
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>330</y>
+      <w>154</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>ENUM: SEX
+{ MALE,FEMALE; }</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>66</x>
+      <y>330</y>
+      <w>110</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>USER=1..1
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>44</y>
+      <w>286</w>
+      <h>275</h>
+    </coordinates>
+    <panel_attributes>PET=1..1
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>341</y>
+      <w>220</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>0</y>
+      <w>462</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>USER=1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;400.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>209</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PET=1..1</panel_attributes>
+    <additional_attributes>10.0;80.0;180.0;10.0</additional_attributes>
+  </element>
+</diagram>

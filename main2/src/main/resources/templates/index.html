@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="es-AR" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/main.css">
-    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/main.css">
+  <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-    <title>Tu Huella</title>
+
+  <title>Tu Huella</title>
 </head>
+
 <body>
-	
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark estiloNav">
-        <div class="container-fluid text-light estiloNav">
-          <a class="navbar-brand tex-light" href="#" >
-            <img src="../static/img/Logo-Huella.png" class="img-fluid d-inline-block align-text-top" width="35" height="35"  alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link tex-light" aria-current="page" href="#">
-                  Home  
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="/users.html">Add your pets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="/pets.html">Find a pet</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/singup.html">SignUp</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid text-light estiloNav px-5">
+        <a class="navbar-brand tex-light" href="#">
+          <img src="../static/img/Logo-Huella.png" class="img-fluid d-inline-block align-text-top" width="35"
+            height="35" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light btn-outline-success rounded-pill mx-3 px-4 " aria-current="page" href="#">
+                Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light btn-outline-success rounded-pill mx-3 px-4" href="/users.html">Add your
+                pets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light btn-outline-success rounded-pill mx-3 px-4" href="/pets.html">Find a pet</a>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+      <a class="btn btn-outline-success  mx-1 px-3 " href="/login.html">Login</a>
+          <a class="btn btn-outline-success mx-1 px-3" role="button" href="/singup.html">SignUp</a>
+    </nav>
+    <menu>
+
+    </menu>
+  </header>
+
+  <main>
+
+  </main>
 
 
-    <script src="../static/bootstrap/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+
+  <script src="../static/bootstrap/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

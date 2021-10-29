@@ -70,7 +70,7 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>660</x>
+      <x>594</x>
       <y>11</y>
       <w>231</w>
       <h>209</h>
@@ -172,21 +172,21 @@ Responsibilities
     <coordinates>
       <x>220</x>
       <y>0</y>
-      <w>462</w>
+      <w>396</w>
       <h>55</h>
     </coordinates>
     <panel_attributes>USER=1..1</panel_attributes>
-    <additional_attributes>10.0;20.0;400.0;30.0</additional_attributes>
+    <additional_attributes>10.0;20.0;340.0;30.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>550</x>
       <y>209</y>
-      <w>220</w>
+      <w>154</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>PET=1..1</panel_attributes>
-    <additional_attributes>10.0;80.0;180.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;120.0;10.0</additional_attributes>
   </element>
 </diagram>

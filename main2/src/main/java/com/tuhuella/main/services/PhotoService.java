@@ -23,11 +23,11 @@ public class PhotoService {
 			photo.setPicture(file.getBytes());
 			
 			return photoRepo.save(photo);
-		} catch {
-			
-		}
-			
-		return null;
+			} else { 
+				return null;
+			}
+		} catch(WebException e) {
+			e.getMessage();
 		}
 	}	
 	

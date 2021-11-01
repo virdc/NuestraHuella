@@ -1,8 +1,10 @@
 package com.tuhuella.main.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -16,18 +18,28 @@ public class Pet {
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid", strategy = "uuid2")
 	private String id;
+	@OneToOne
 	private Photo photo;
+	@Column(length = 50)
 	private String name;
+	@Column(length = 50)
 	private Integer ageInMontageInMonths;
+	@Column(length = 50)
 	private String species;
+	@Column(length = 50)
 	private String breed;
+	@Column(length = 50)
 	private Integer weight;
+	@Column(length = 50)
 	private Sex sex;
+	@Column(length = 50)
 	private Size size;
 	private Boolean upToDateVaccine;
 	private Boolean castrated;
 	private Boolean dewormed;
+	@Column(length = 50)
 	private String disease;
+	@Column(length = 50)
 	private Zone zone;
 	
 	

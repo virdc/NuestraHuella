@@ -14,21 +14,22 @@ public class PhotoService {
 	@Autowired
 	private PhotoRepository photoRepo;
 	
-	public Photo savePhoto(MultipartFile file) throws WebException {
+	public Photo savePhoto(MultipartFile file) throws Exception {
 		try {
 		if(file != null) {
 			Photo photo = new Photo();
-			photo.setMime(file.getContentType());
+			
 			photo.setName(file.getName());
 			photo.setPicture(file.getBytes());
 			
 			return photoRepo.save(photo);
-			} else { 
-				return null;
-			}
-		} catch(WebException e) {
-			e.getMessage();
+		} } catch {
+			Exception e;
 		}
+			
+		return null;
+		
 	}	
 	
+}
 }

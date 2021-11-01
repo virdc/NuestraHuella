@@ -2,41 +2,64 @@ package com.tuhuella.main.entities;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
+@Table(name = "users")
 public class User {
 	@Id
+    @Column(name = "id_user", nullable = false, unique = true)
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid", strategy = "uuid2")
-	String id;
-	Photo photo;
-	String name;
-	String surname;
-	String userName;
-	String password;
-	Integer age; 
-	String street;
-	Integer streetNumber;
-	Zone zone;
-	Integer phoneNumber;
-	Integer alternativeNumber;
-	String email;
+	private String id;
+	@OneToOne
+	private Photo photo;
+	@Column(length = 50)
+	private String name;
+	@Column(length = 50)
+	private String surname;
+	@Column(length = 50, unique = true )
+	private String username;
+	@Column(length = 50)
+	private String password;
+	@Column(length = 50)
+	private Date BirthDate;
+	@Column(length = 50)
+	private String street;
+	@Column(length = 50)
+	private Integer streetNumber;
+	@Column(length = 50)
+	private Zone zone;
+	@Column(length = 50)
+	private Integer phoneNumber;
+	@Column(length = 50)
+	private Integer alternativeNumber;
+	@Column(length = 50)
+	private String email;
 	@Temporal(TemporalType.DATE)
-	Date createUser;
+	@Column(length = 50)
+	private Date createUser;
 	@Temporal(TemporalType.DATE)
-	Date modifiedUser;
-	Boolean active;
+	@Column(length = 50)
+	private Date modifiedUser;
+	@Column(length = 50)
+	private Boolean active;
+	
+	public User() {
+		super();
+	}
 	public String getId() {
 		return id;
 	}
-
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -46,35 +69,11 @@ public class User {
 	public void setPhoto(Photo photo) {
 		this.photo = photo;
 	}
-	public String getName() {
-		return name;
+	public Date getBirthDate() {
+		return BirthDate;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getSurname() {
-		return surname;
-	}
-	public void setSurname(String surname) {
-		this.surname = surname;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public Integer getAge() {
-		return age;
-	}
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setBirthDate(Date birthDate) {
+		BirthDate = birthDate;
 	}
 	public String getStreet() {
 		return street;
@@ -130,8 +129,8 @@ public class User {
 	public void setActive(Boolean active) {
 		this.active = active;
 	}
-	public User() {
-		super();
-	}
+
+	
+
 	
 }

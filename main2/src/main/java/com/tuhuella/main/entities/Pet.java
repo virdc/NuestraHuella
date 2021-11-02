@@ -17,6 +17,7 @@ public class Pet {
 	@Id
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid", strategy = "uuid2")
+	@Column(length = 50)
 	private String id;
 	@OneToOne
 	private Photo photo;

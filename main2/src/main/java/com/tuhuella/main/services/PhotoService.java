@@ -23,8 +23,8 @@ public class PhotoService {
 			photo.setPicture(file.getBytes());
 			
 			return photoRepo.save(photo);
-		} } catch {
-			Exception e;
+		} } catch(Exception e) {
+			
 		}
 			
 		return null;
@@ -32,4 +32,4 @@ public class PhotoService {
 	}	
 	
 }
-}
+

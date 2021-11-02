@@ -12,8 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.tuhuella.main.entities.Photo;
 import com.tuhuella.main.entities.User;
 import com.tuhuella.main.entities.Zone;
-import com.tuhuella.main.repositories.PhotoRepository;
-import com.tuhuella.main.repositories.UserRepository;
+import com.tuhuella.main.repositories.*;
 
 @Service
 public class UserService {
@@ -37,8 +36,7 @@ public class UserService {
 		entity.setName(name);
 		entity.setSurname(surname);
 		entity.setUsername(userName);
-		entity.setPassword(password);
-
+		entity.setPassword(password);		
 		entity.setActive(true);
 		entity.setPhoto(photo);
 		entity.setBirthDate(birthDate);
@@ -53,12 +51,12 @@ public class UserService {
 		return userRepository.save(entity);
 	}
 
-	public List<User> showUserByEmail(String email) throws Exception {
+	public Optional<User> showUserByEmail(String email) throws Exception {
 		try {
-			return userRepository.findByNameContain(email);
+			return userRepository.findMyUserByEmail(email);
 
 		} catch (Exception e) {
-			return userRepository.findByNameContain(email);
+			return userRepository.findMyUserByEmail(email);
 
 		}
 

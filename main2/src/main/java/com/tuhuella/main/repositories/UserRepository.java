@@ -10,12 +10,12 @@ import org.springframework.stereotype.Repository;
 import com.tuhuella.main.entities.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, String> {
 	
 	@Query("SELECT a from User a WHERE a.email = ?1 ")
 	Optional <User> findMyUserByEmail(String email); 
-	List<User> findByNameContain(String name);
-	List<User> findAll();
+	//List<User> findByNameContain(String name);
+	//List<User> findAll();
 	
 	@Query("SELECT a from User a where a.id = ?1 ")
 	Optional <User> findMyUserByID(String id); 

@@ -6,13 +6,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.tuhuella.main.entities.Photo;
 import com.tuhuella.main.repositories.PhotoRepository;
-import com.tuhuella.main.webException.WebException;
 
 @Service
 public class PhotoService {
 	
 	@Autowired
-	private PhotoRepository photoRepo;
+	PhotoRepository photoRepo;
 	
 	public Photo savePhoto(MultipartFile file) throws Exception {
 		try {

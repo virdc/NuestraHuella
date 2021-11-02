@@ -13,14 +13,15 @@ import com.tuhuella.main.webException.WebException;
 
 @Service
 public class PetService {
+
 @Autowired
 private PetRepository petRepository;
 
 @Transactional
-public void createPet ( String name) throws WebException{
+public void createPet ( String name) throws Exception{
 	
 	if (name.equals(null)||name.isEmpty()) {
-		throw new WebException ("El nombre no puede estar vacio");
+		throw new Exception ("El nombre no puede estar vacio");
 	}
 	
 

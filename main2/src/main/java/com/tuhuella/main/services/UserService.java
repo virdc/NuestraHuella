@@ -20,11 +20,11 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 
-	@Autowired
-	private PhotoRepository PhotoRepository;
+	/*@Autowired
+	private PhotoRepository PhotoRepository;*/
 
-	@Autowired
-	private PetRepository PetRepository;
+	/*@Autowired
+	private PetRepository PetRepository;*/
 
 	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public User signUpUser(Photo photo, String name, String surname, String userName, String password, Date birthDate,
@@ -33,6 +33,7 @@ public class UserService {
 
 		validate(name, surname, userName, email, password);
 		User entity = new User();
+		
 		entity.setName(name);
 		entity.setSurname(surname);
 		entity.setUsername(userName);
@@ -117,5 +118,44 @@ public class UserService {
 		}
 
 	}
+	@Transactional(readOnly = true)
+	public List<User> findUsers() {
+		
+		List<User> findUsers = userRepository.findAll();
+		return findUsers;
+			
+	}
+	@Transactional
+	public User edit(String Id) {
+	         Optional<User> edit =  userRepository.findById(Id); 
+	         User user = edit.get();
+	         userRepository.save(user);
+	 		return user;
+	}
+	@Transactional
+	public User lockUser(String Id) {
+		Optional<User> lockUser=userRepository.findById(Id);
+		User user = lockUser.get();
+		user.setActive(false);
+		userRepository.save(user);
+		return user;
+	}
+	
+	@Transactional
+	public void editUser(String id, String name) throws Exception {
 
+		if (name == null || name.isEmpty()) {
+			throw new Exception("El nombre no puede estar vacio");
+		}
+
+		Optional<User> answer = userRepository.findById(id);
+		if (answer.isPresent()) {
+			User user = answer.get();
+			user.setName(name);
+		} else {
+			throw new Exception("No se pudo encontrar el id solicitado");
+		}
+
+	}
 }
+

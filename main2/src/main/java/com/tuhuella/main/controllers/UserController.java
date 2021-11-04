@@ -28,7 +28,7 @@ public class UserController {
 
 	@GetMapping("/register")
 	public String form() {
-		return "form-user";
+		return "form-usuario";
 	}
 
 	@PostMapping("/register")

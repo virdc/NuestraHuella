@@ -1,8 +1,11 @@
 .estiloNav{
-    background-color: #BFA2DB;
+    background-color: #9c74c2;
 }
 
 .letraNav{
     color: whitesmoke;
 }
 
+.section1{
+    width: 75%;
+}

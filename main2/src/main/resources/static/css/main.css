@@ -18,3 +18,9 @@
 .section1{
     width: 75%;
 }
+
+.titulos{
+    font-family: 'Sigmar One', cursive;
+    font-weight: 400;
+    font-size: 80px;
+}

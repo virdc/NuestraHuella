@@ -1,17 +1,17 @@
 .estiloNav{
-    background-color: #9c74c2;
+    background-color: #b89cd3;
 }
 
 .footerlast {
     background-size: -10px;
     background-color: #7b5c97;
-    border-top: 1px solid #352E30;
+    border-top: 1px solid #3d3b3b;
     height: 1px; 
     clear: both;
     padding: 0 10px;
  }
 main{
-    background-color: #9cce12d5;
+    background-color: #abd4a2d5;
     background-image: url(../img/topography.svg);
 }
 
@@ -86,8 +86,8 @@ body{
 }
 
 .atras{
-    width: 75vh;
-	height: 75vh;
+    width: 60vh;
+	height: 65vh;
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 
@@ -136,4 +136,10 @@ body{
 .card3{
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
+}
+
+.botonLogin{
+	background-color: green; 
+	
+	
 }

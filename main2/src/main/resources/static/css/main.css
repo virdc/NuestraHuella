@@ -2,7 +2,6 @@
     background-color: #9c74c2;
 }
 
-<<<<<<< Updated upstream
 .footerlast {
     background-size: -10px;
     background-color: #7b5c97;
@@ -11,12 +10,10 @@
     clear: both;
     padding: 0 10px;
  }
-=======
 main{
     background-color: #9cce12d5;
     background-image: url(../img/topography.svg);
 }
->>>>>>> Stashed changes
 
 .letraNav{
     color: whitesmoke;
@@ -115,13 +112,11 @@ body{
   
 }
 
-<<<<<<< Updated upstream
 .titulos{
     font-family: 'Sigmar One', cursive;
     font-weight: 400;
     font-size: 80px;
 }
-=======
 .tarjeta-wrap:hover .tarjeta{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
@@ -142,4 +137,3 @@ body{
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
->>>>>>> Stashed changes

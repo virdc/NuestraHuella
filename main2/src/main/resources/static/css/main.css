@@ -1,32 +1,34 @@
-.estiloNav{
-    background-color: #b89cd3;
+.estiloNav {
+	background-color: #b89cd3;
 }
 
 .footerlast {
-    background-size: -10px;
-    background-color: #7b5c97;
-    border-top: 1px solid #3d3b3b;
-    height: 1px; 
-    clear: both;
-    padding: 0 10px;
- }
-main{
-    background-color: #abd4a2d5;
-    background-image: url(../img/topography.svg);
+	background-size: -10px;
+	background-color: #7b5c97;
+	border-top: 1px solid #3d3b3b;
+	height: 1px;
+	clear: both;
+	padding: 0 10px;
 }
 
-.letraNav{
-    color: whitesmoke;
-}
-.letraAnimal{
-    color:#410b747c;
+main {
+	background-color: #abd4a2d5;
+	background-image: url(../img/topography.svg);
 }
 
-.section1{
-    width: 75vh;
+.letraNav {
+	color: whitesmoke;
 }
 
-*{
+.letraAnimal {
+	color: #410b747c;
+}
+
+.section1 {
+	width: 75vh;
+}
+
+* {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
@@ -34,11 +36,11 @@ main{
 	box-sizing: border-box;
 }
 
-body{
-  background: #1D1F20;
+body {
+	background: #1D1F20;
 }
 
-.wrap{
+.wrap {
 	width: 100vh;
 	margin: 50px auto;
 	display: -webkit-box;
@@ -51,13 +53,13 @@ body{
 	justify-content: center;
 }
 
-.tarjeta-wrap{
+.tarjeta-wrap {
 	margin: 10px;
 	-webkit-perspective: 800;
 	perspective: 800;
 }
 
-.tarjeta{
+.tarjeta {
 	width: 50vh;
 	height: 55vh;
 	background: #9c74c2;
@@ -66,12 +68,11 @@ body{
 	transform-style: preserve-3d;
 	-webkit-transition: .7s ease;
 	transition: .7s ease;
-	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
 }
 
-.adelante, .atras{
+.adelante, .atras {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -81,16 +82,15 @@ body{
 	backface-visibility: hidden;
 }
 
-.adelante{
+.adelante {
 	width: 100%;
 }
 
-.atras{
-    width: 60vh;
+.atras {
+	width: 60vh;
 	height: 65vh;
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-
 	padding: 15px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -104,42 +104,78 @@ body{
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-
 	text-align: center;
 	color: #fff;
 	font-family: "open sans";
-    background: #9c74c2;
-  
+	background: #9c74c2;
 }
 
-.titulos{
-    font-family: 'Sigmar One', cursive;
-    font-weight: 400;
-    font-size: 80px;
+.titulos {
+	font-family: 'Sigmar One', cursive;
+	font-weight: 400;
+	font-size: 80px;
 }
-.tarjeta-wrap:hover .tarjeta{
+
+.tarjeta-wrap:hover .tarjeta {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 
-
-.card1{
+.card1 {
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
 
-.card2{
+.card2 {
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
 
-.card3{
+.card3 {
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
 
-.botonLogin{
-	background-color: green; 
-	
-	
+.botonLogin {
+	background-color: green;
+}
+
+#sección {
+	margin-left: 70px;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+}
+
+#primer, #segundo, #tercero, #cuarto {
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+	background-color: #9c74c2;
+	/* margin-right: 10px; */
+	border: #8400ff 1px solid;
+	/* border-radius: 25px; */
+	vertical-align: middle;
+}
+
+#primer {
+	color: #ffffff;
+}
+
+#segundo {
+	color: #380cfa;
+}
+
+#tercero {
+	color: #e0dd0b;
+	0;
+	#00ff22
+}
+
+#cuarto {
+	color: #00ff22;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
 }

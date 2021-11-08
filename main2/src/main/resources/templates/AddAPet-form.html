@@ -83,16 +83,6 @@
             <h2 class="display-3 d-flex justify-content-center">REGISTRA A TU MASCOTA</h2>
         </div>
         <form class="row g-3 d-flex justify-content-center px-4">
-            <div class="col-6">
-                <input type="text" name="name"
-                    class="form-control border border-success shadow p-2 mb-1 bg-body rounded"
-                    placeholder="Ingresa aquí el NOMBRE de tu mascota">
-                <br>
-            </div>
-            <div class="col-md-6">
-                <input type="Age" name="age" class="form-control border border-success shadow p-2 mb-1 bg-body rounded"
-                    placeholder="Ingrese aquí la EDAD de su mascota (en meses)">
-            </div>
             <div class="col-md-6">
                 <input type="text" name="USER"
                     class="form-control border border-success shadow p-2 mb-1 bg-body rounded"
@@ -102,14 +92,19 @@
                 <input type="password" pass="password"
                     class="form-control border border-success shadow p-2 mb-1 bg-body rounded" placeholder="Contraseña">
             </div>
-            <div class="col-md-6">
-                <input type="email" name="password"
+            <div class="col-6">
+                <input type="text" name="name"
                     class="form-control border border-success shadow p-2 mb-1 bg-body rounded"
-                    placeholder="Repetir Contraseña">
+                    placeholder="Ingresa aquí el NOMBRE de tu mascota">                 
+            </div>             <br> <br>
+            <div class="col-6">
+                <input type="Age" name="age" class="form-control border border-success shadow p-2 mb-1 bg-body rounded"
+                    placeholder="Ingrese aquí la EDAD de su mascota (en meses)">
             </div>
+           
             <div class="col-12">
-                <input type="number" name="age"
-                    class="form-control border border-success shadow p-2 mb-1 bg-body rounded" placeholder="Edad">
+                <input type="specie" name="tipo mascota"
+                    class="form-control border border-success shadow p-2 mb-1 bg-body rounded" placeholder="Indique la especie de su mascota (por ej: perro, gato, etc)">
             </div>
             <div class="col-md-6">
                 <input type="text" name="street"
@@ -159,7 +154,7 @@
 
     </main>
 
-
+    
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../static/css/main.css">
+  <link rel="icon" type="image/png" href="../static/img/ícono.png">
   <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/css/boxicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,16 +31,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-3 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-light btn-outline-success rounded-pill mx-2 px-4" aria-current="page" href="#">
+              <a class="nav-link text-light btn-outline-success rounded-pill mx-2 px-4" aria-current="page" href="index.html">
                 Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light btn-outline-success rounded-pill mx-2 px-4" href="/users.html">Add your
                 pets</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-light btn-outline-success rounded-pill mx-2 px-4" href="/pets.html">Find a pet</a>
-            </li>
+            <p>
+              <button class="btn text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                aria-expanded="false" aria-controls="collapseWidthExample">
+                <li class="nav-item">
+                  <a class="nav-link text-light btn-outline-success rounded-pill mx-2 px-4" href="/pets.html">Find a
+                    pet</a>
+                </li>
+              </button>
+            </p>
           </ul>
           <a class="btn text-light btn-outline-success mx-3 px-3 " href="/login.html">Login</a>
           <a class="btn text-light btn-outline-success mx-3 px-3" href="/singup.html">SignUp</a>
@@ -50,6 +57,19 @@
         </div>
       </div>
     </nav>
+    <div style="min-height: 120px;">
+      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <div style="width: 975px;">
+          <nav>
+            <section id="sección">
+              <a id="primer" href="https://github.com/"> Ingresa ciudad, <br> país </br> o código postal </a>
+              <a id="segundo" href="https://getbootstrap.com/"> Encuentra <br> un </br> perro </a>
+              <a id="tercero" href="https://www.w3schools.com/"> Encuentra <br> un </br> gato </a>
+              <a id="cuarto" href="https://flexboxfroggy.com/#es"> Encuentra <br> otras </br> mascotas </a>
+            </section>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>

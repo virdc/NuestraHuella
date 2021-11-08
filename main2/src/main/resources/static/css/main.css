@@ -1,25 +1,27 @@
-.estiloNav{
-    background-color: #b89cd3;
+.estiloNav {
+	background-color: #b89cd3;
 }
 
 .footerlast {
-    background-size: -10px;
-    background-color: #7b5c97;
-    border-top: 1px solid #3d3b3b;
-    height: 1px; 
-    clear: both;
-    padding: 0 10px;
- }
-main{
-    background-color: #abd4a2d5;
-    background-image: url(../img/topography.svg);
+	background-size: -10px;
+	background-color: #7b5c97;
+	border-top: 1px solid #3d3b3b;
+	height: 1px;
+	clear: both;
+	padding: 0 10px;
 }
 
-.letraNav{
-    color: whitesmoke;
+main {
+	background-color: #abd4a2d5;
+	background-image: url(../img/topography.svg);
 }
-.letraAnimal{
-    color:#410b747c;
+
+.letraNav {
+	color: whitesmoke;
+}
+
+.letraAnimal {
+	color: #410b747c;
 }
 
 .section1{
@@ -81,7 +83,7 @@ main{
 
 }
 
-.adelante, .atras{
+.adelante, .atras {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -91,14 +93,13 @@ main{
 	backface-visibility: hidden;
 }
 
-.adelante{
+.adelante {
 	width: 100%;
 }
 
 .atras{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-
 	padding: 15px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -112,7 +113,6 @@ main{
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-
 	text-align: center;
 	color: #fff;
 	font-family: "open sans";
@@ -131,12 +131,12 @@ main{
 	background-size: cover;
 }
 
-.card2{
+.card2 {
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
 
-.card3{
+.card3 {
 	background-image: url(../img/Logo-Huella.png);
 	background-size: cover;
 }
@@ -469,10 +469,6 @@ main{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-	}
-	
-	body{
-	  background: #1D1F20;
 	}
 	
 	.wrap{

@@ -570,3 +570,41 @@ main {
 
 
 
+#sección {
+	margin-left: 70px;
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+}
+
+#primer, #segundo, #tercero, #cuarto {
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+	background-color: #9c74c2;
+	/* margin-right: 10px; */
+	border: #8400ff 1px solid;
+	/* border-radius: 25px; */
+	vertical-align: middle;
+}
+
+#primer {
+	color: #ffffff;
+}
+
+#segundo {
+	color: #3e2c8d;
+}
+
+#tercero {
+	color: #e0dd0b;
+	
+}
+
+#cuarto {
+	color: #00ff22;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+}

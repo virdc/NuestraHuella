@@ -1,4 +1,4 @@
-package loginSecurityConfig;
+package com.tuhuella.main;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

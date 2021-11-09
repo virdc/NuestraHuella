@@ -1,4 +1,4 @@
-package loginSecurityConfig;
+package com.tuhuella.main;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -29,14 +29,14 @@ public class webSecurityConfig extends WebSecurityConfigurerAdapter{
 	        .antMatchers(resources).permitAll()  
 	        .antMatchers("/","/index").permitAll()
 	        .antMatchers("/admin*").access("hasRole('ADMIN')")
-	        .antMatchers("/user*").access("hasRole('USER')")
+	        .antMatchers("/user*").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
                 .loginPage("/login")
                 .permitAll()
                 .defaultSuccessUrl("/menu")
-                .failureUrl("/login?error=true")
+                .failureUrl("/user/register")
                 .usernameParameter("username")
                 .passwordParameter("password")
                 .and()

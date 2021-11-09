@@ -26,7 +26,7 @@ public class Pet {
 	@Column(length = 50)
 	private String name;
 	@Column(length = 50)
-	private Integer ageInMontageInMonths;
+	private Integer ageInMonths;
 	@Column(length = 50)
 	private String species;
 	@Column(length = 50)
@@ -68,12 +68,17 @@ public class Pet {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getAgeInMontageInMonths() {
-		return ageInMontageInMonths;
+
+	public Integer getAgeInMonths() {
+		return ageInMonths;
 	}
-	public void setAgeInMontageInMonths(Integer ageInMontageInMonths) {
-		this.ageInMontageInMonths = ageInMontageInMonths;
+
+
+	public void setAgeInMonths(Integer ageInMonths) {
+		this.ageInMonths = ageInMonths;
 	}
+
+
 	public String getSpecies() {
 		return species;
 	}

@@ -1,30 +1,37 @@
 package com.tuhuella.main.services;
 
+
+
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.tuhuella.main.entities.Photo;
 import com.tuhuella.main.entities.User;
+
 import com.tuhuella.main.entities.Zone;
 import com.tuhuella.main.repositories.*;
 
 @Service
-public class UserService {
-
+public class UserService  {
 	@Autowired
 	private UserRepository userRepository;
 
-	/*@Autowired
-	private PhotoRepository PhotoRepository;*/
+	/*
+	 * @Autowired private PhotoRepository PhotoRepository;
+	 */
 
-	/*@Autowired
-	private PetRepository PetRepository;*/
+	/*
+	 * @Autowired private PetRepository PetRepository;
+	 */
 
 	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public User signUpUser(Photo photo, String name, String surname, String userName, String password, Date birthDate,
@@ -33,11 +40,11 @@ public class UserService {
 
 		validate(name, surname, userName, email, password);
 		User entity = new User();
-		
+
 		entity.setName(name);
 		entity.setSurname(surname);
 		entity.setUsername(userName);
-		entity.setPassword(password);		
+		entity.setPassword(password);
 		entity.setActive(true);
 		entity.setPhoto(photo);
 		entity.setBirthDate(birthDate);
@@ -118,29 +125,32 @@ public class UserService {
 		}
 
 	}
+
 	@Transactional(readOnly = true)
 	public List<User> findUsers() {
-		
+
 		List<User> findUsers = userRepository.findAll();
 		return findUsers;
-			
+
 	}
+
 	@Transactional
 	public User edit(String Id) {
-	         Optional<User> edit =  userRepository.findById(Id); 
-	         User user = edit.get();
-	         userRepository.save(user);
-	 		return user;
+		Optional<User> edit = userRepository.findById(Id);
+		User user = edit.get();
+		userRepository.save(user);
+		return user;
 	}
+
 	@Transactional
 	public User lockUser(String Id) {
-		Optional<User> lockUser=userRepository.findById(Id);
+		Optional<User> lockUser = userRepository.findById(Id);
 		User user = lockUser.get();
 		user.setActive(false);
 		userRepository.save(user);
 		return user;
 	}
-	
+
 	@Transactional
 	public void editUser(String id, String name) throws Exception {
 
@@ -157,5 +167,7 @@ public class UserService {
 		}
 
 	}
-}
 
+		
+
+}

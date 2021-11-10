@@ -13,6 +13,10 @@
 	flex-direction: column-reverse;
 }
 
+body{
+	background-color: #abd4a2d5;
+}
+
 main {
 	background-color: #abd4a2d5;
 	background-image: url(../img/topography.svg);
@@ -51,7 +55,8 @@ main {
 
 .wrap{
 	width: 990px;
-	margin: 30px auto;
+	margin: 0px auto;
+	padding: 30px auto;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -64,7 +69,7 @@ main {
 }
 
 .tarjeta-wrap{
-	margin: 0px 30px;
+	margin: 30px;
 	-webkit-perspective: 800;
 	perspective: 800;
 
@@ -154,7 +159,8 @@ main {
 	
 	.wrap{
 		width: 300px;
-		margin: 5px auto;
+		margin: 0px auto;
+		padding: 5px;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -258,7 +264,8 @@ main {
 	
 	.wrap{
 		width: 450px;
-		margin: 5px auto;
+		margin: 0px auto;
+		padding: 5px;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -361,7 +368,8 @@ main {
 	
 	.wrap{
 		width: 598px;
-		margin: 5px auto;
+		margin: 0px auto;
+		padding: 5px auto;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -475,7 +483,8 @@ main {
 	
 	.wrap{
 		width: 750px;
-		margin: 5px auto;
+		margin: 0px auto;
+		padding: 10px;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -493,8 +502,8 @@ main {
 	}
 	
 	.tarjeta{
-		width: 350px;
-		height: 400px;
+		width: 300px;
+		height: 350px;
 		background: #9c74c2;
 		position: relative;
 		-webkit-transform-style: preserve-3d;
@@ -571,7 +580,6 @@ main {
 
 
 #sección {
-	margin-left: 70px;
 	display: flex;
 	flex-direction: row;
 	font-weight: bold;

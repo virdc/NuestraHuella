@@ -613,6 +613,28 @@ main {
 	color: #00ff22;
 }
 
-a:link, a:visited, a:active {
+/* a:link, a:visited, a:active {
 	text-decoration: none;
+} */
+
+.botonDelete{
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+.Eliminar:hover{
+	color: #f19b9b;
+}
+.Eliminar{
+	display: flex;
+	border: 5px solid #f5edf2; /*anchura, estilo y color borde*/
+	padding: 8px; /*espacio alrededor texto*/
+	background-color: #8b3030; /*color botón*/
+	color: #f5edf2; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	justify-content: center;
+	font-family: 'Ubuntu', sans-serif; /*tipografía texto*/
+	border-radius: 20px; /*bordes redondos*/
+	width: 200px;
 }
